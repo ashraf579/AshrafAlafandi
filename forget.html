@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Liter&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+
+
+    <style>
+        body{
+    height: 100vh;
+    font-family: "Familjen Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-image: linear-gradient(#A257B3 , #6658E9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main{
+    margin-bottom: 20px;
+    background-color: white;
+    width: 400px;
+    height:280px;
+    border-radius: 10px;
+
+}
+
+
+.p-1{
+    text-align: center;
+}
+
+.p-1 p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding-bottom: 20px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid rgb(48, 47, 47);
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+button{
+    background-image: linear-gradient(to right,#0BBEFF , #6658E9 , #A257B3);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="p-1">
+            <h1>Forgot Your Password?</h1>
+            <p>please enter the email you use to login</p>
+        </div>
+        <div class="inp">
+                <input type="email" name="email" id="forget" placeholder="Your Email">
+        </div>
+
+        <div class="btn">
+            <button>Request Password Reset</button>
+            <p style="cursor: pointer;">back to login</p>
+        </div>
+
+    </div>
+
+    <script>
+        let para = document.querySelectorAll("p")
+        para[1].onclick = () => {
+            window.open("index.html")
+            window.close("forget.html")
+        }
+    </script>
+</body>
+</html>

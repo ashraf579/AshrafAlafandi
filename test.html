@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html% lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h" style="text-align: center; color: brown;">Welcome </h1>
+    <h2 class="o" style="text-align: center; color: brown; ">Your Password </h2>
+
+    <P style="color: blue; text-align: center; font-size: 20px;">مسا مسا اتهكرت يا رايق</P>
+
+    <img src="/images.jpg" style="transform: translateX(170%);" alt="">
+
+    <p style="text-align: center; font-size: 25px; transform: translateY(200%);">&copy; copy right Ashraf Alafandi</p>
+
+    <script>
+        let user = document.querySelector(".h");
+        let pass = document.querySelector(".o");
+        console.log(user,pass)
+
+        user.innerHTML+= localStorage.getItem("user")
+        pass.innerHTML+= localStorage.getItem("pass")
+    </script>
+</body>
+</html%
